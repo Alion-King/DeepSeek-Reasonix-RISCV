@@ -367,6 +367,7 @@ for asset in \
 	reasonix-darwin-arm64.tar.gz \
 	reasonix-linux-amd64.tar.gz \
 	reasonix-linux-arm64.tar.gz \
+	reasonix-linux-riscv64.tar.gz \
 	reasonix-windows-amd64.zip \
 	reasonix-windows-arm64.zip \
 	SHA256SUMS; do
@@ -383,6 +384,7 @@ publication_assets='[
 	"reasonix-darwin-arm64.tar.gz",
 	"reasonix-linux-amd64.tar.gz",
 	"reasonix-linux-arm64.tar.gz",
+	"reasonix-linux-riscv64.tar.gz",
 	"reasonix-windows-amd64.zip",
 	"reasonix-windows-arm64.zip",
 	"SHA256SUMS"
@@ -392,6 +394,7 @@ for asset in \
 	reasonix-darwin-arm64.tar.gz \
 	reasonix-linux-amd64.tar.gz \
 	reasonix-linux-arm64.tar.gz \
+	reasonix-linux-riscv64.tar.gz \
 	reasonix-windows-amd64.zip \
 	reasonix-windows-arm64.zip; do
 	printf '%s  %s\n' "$publication_hash" "$asset"
@@ -461,6 +464,7 @@ manifest_assets='[
 	"reasonix-darwin-arm64.tar.gz",
 	"reasonix-linux-amd64.tar.gz",
 	"reasonix-linux-arm64.tar.gz",
+	"reasonix-linux-riscv64.tar.gz",
 	"reasonix-windows-amd64.zip",
 	"reasonix-windows-arm64.zip",
 	"SHA256SUMS"

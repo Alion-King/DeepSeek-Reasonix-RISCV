@@ -40,7 +40,7 @@ func DownloadCLI(ctx context.Context, client *http.Client, version, goos, goarch
 	if goos != "linux" && goos != "darwin" {
 		return nil, fmt.Errorf("remote CLI download does not support OS %q", goos)
 	}
-	if goarch != "amd64" && goarch != "arm64" {
+	if goarch != "amd64" && goarch != "arm64" && goarch != "riscv64" {
 		return nil, fmt.Errorf("remote CLI download does not support architecture %q", goarch)
 	}
 	return downloadCLIFromBase(ctx, client, cliReleaseBase, version, goos, goarch, true)

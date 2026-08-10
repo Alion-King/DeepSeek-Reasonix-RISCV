@@ -82,6 +82,7 @@ detect_platform() {
 	case "$machine" in
 	arm64|aarch64) arch="arm64" ;;
 	x86_64|amd64) arch="amd64" ;;
+	riscv64|rv64) arch="riscv64" ;;
 	*) fail "unsupported host architecture: $machine" ;;
 	esac
 
@@ -106,6 +107,7 @@ detect_native_platform() {
 	case "$machine" in
 	arm64|aarch64) arch="arm64" ;;
 	x86_64|amd64) arch="amd64" ;;
+	riscv64|rv64) arch="riscv64" ;;
 	*) fail "unsupported host architecture: $machine" ;;
 	esac
 	printf '%s/%s' "$os" "$arch"

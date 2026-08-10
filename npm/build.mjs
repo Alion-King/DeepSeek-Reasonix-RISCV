@@ -12,6 +12,7 @@ const TARGETS = [
   { node: "darwin-arm64", goos: "darwin", goarch: "arm64" },
   { node: "darwin-x64", goos: "darwin", goarch: "amd64" },
   { node: "linux-arm64", goos: "linux", goarch: "arm64" },
+  { node: "linux-riscv64", goos: "linux", goarch: "riscv64" },
   { node: "linux-x64", goos: "linux", goarch: "amd64" },
   { node: "win32-arm64", goos: "windows", goarch: "arm64" },
   { node: "win32-x64", goos: "windows", goarch: "amd64" },
@@ -68,7 +69,7 @@ for (const t of TARGETS) {
         version,
         description: `reasonix prebuilt binary for ${t.node}.`,
         os: [t.goos === "windows" ? "win32" : t.goos],
-        cpu: [t.goarch === "amd64" ? "x64" : "arm64"],
+        cpu: [t.goarch === "amd64" ? "x64" : t.goarch ==="arm64" ? "arm64" : "riscv64"],
         files: ["bin/"],
         license: "MIT",
         repository: {
