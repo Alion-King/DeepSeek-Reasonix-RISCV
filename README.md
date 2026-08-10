@@ -42,6 +42,14 @@
 
 <br/>
 
+<br/>
+
+## New Features
+- PlatForm: RISCV (SpaceMit K3).
+- Mode: support CLI. not support GUI.
+
+<br/>
+
 > [!IMPORTANT]
 > **Community · 加入社区** — bilingual Discord for setup help (`#help` / `#求助`), workflow showcases, and feature ideas. → **<https://discord.gg/XF78rEME2D>**
 
